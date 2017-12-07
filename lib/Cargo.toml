@@ -35,11 +35,7 @@ hyper = { version = "0.10.13", default-features = false }
 hyper-sync-rustls = { version = "0.3.0-rc.1", features = ["server"], optional = true }
 ordermap = "0.3"
 isatty = "0.1"
-
-[dependencies.cookie]
-git = "https://github.com/alexcrichton/cookie-rs"
-rev = "b8298e"
-features = ["percent-encode", "secure"]
+cookie = { version = "0.10", features = ["percent-encode", "secure"] }
 
 [dev-dependencies]
 lazy_static = "0.2"

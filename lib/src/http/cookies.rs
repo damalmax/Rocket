@@ -235,10 +235,6 @@ impl<'a> Cookies<'a> {
                 cookie.set_path("/");
             }
 
-            if cookie.http_only().is_none() {
-                cookie.set_http_only(true);
-            }
-
             if cookie.expires().is_none() {
                 cookie.set_expires(::time::now() + ::time::Duration::weeks(1));
             }
